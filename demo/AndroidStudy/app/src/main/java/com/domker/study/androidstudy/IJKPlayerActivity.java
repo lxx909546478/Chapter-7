@@ -33,6 +33,7 @@ public class IJKPlayerActivity extends AppCompatActivity {
             this.finish();
         }
         ijkPlayer.setListener(new VideoPlayerListener());
+        ijkPlayer.getMeasuredWidth();
         ijkPlayer.setVideoResource(R.raw.bytedance);
 //        ijkPlayer.setVideoPath(getVideoPath());
 
@@ -60,9 +61,12 @@ public class IJKPlayerActivity extends AppCompatActivity {
 
 
     private String getVideoPath() {
-        return "http://qthttp.apple.com.edgesuite.net/1010qwoeiuryfg/sl.m3u8";
+//        return "http://qthttp.apple.com.edgesuite.net/1010qwoeiuryfg/sl.m3u8";
+        return "http://jzvd.nathen.cn/video/1137e480-170bac9c523-0007-1823-c86-de200.mp4";
 //        return "android.resource://" + this.getPackageName() + "/" + resId;
     }
+
+
 
     @Override
     protected void onStop() {

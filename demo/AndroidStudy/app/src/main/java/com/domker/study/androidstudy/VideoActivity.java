@@ -1,5 +1,6 @@
 package com.domker.study.androidstudy;
 
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
@@ -35,7 +36,9 @@ public class VideoActivity extends AppCompatActivity {
         });
 
         videoView = findViewById(R.id.videoView);
-        videoView.setVideoPath(getVideoPath(R.raw.bytedance));
+        //videoView.setVideoPath(getVideoPath(R.raw.bytedance));
+        videoView.setVideoURI(Uri.parse("http://jzvd.nathen.cn/video/1137e480-170bac9c523-0007-1823-c86-de200.mp4"));
+
     }
 
     private String getVideoPath(int resId) {
